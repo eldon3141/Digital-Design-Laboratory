@@ -1,0 +1,200 @@
+//! **************************************************************************
+// Written by: Map P.68d on Fri Mar 06 11:52:12 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "VGA_HS_O" LOCATE = SITE "N6" LEVEL 1;
+COMP "VGA_VS_O" LOCATE = SITE "P7" LEVEL 1;
+COMP "RST_BTN" LOCATE = SITE "D9" LEVEL 1;
+COMP "VGA_B_O<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "VGA_B_O<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "VGA_G_O<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "VGA_G_O<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "VGA_G_O<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "VGA_R_O<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "VGA_R_O<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "VGA_R_O<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "dino_duck" LOCATE = SITE "C9" LEVEL 1;
+COMP "dino_jump" LOCATE = SITE "A8" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "i_clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "gs/o_state_FSM_FFd2" BEL "gs/o_state_FSM_FFd1" BEL
+        "gs/grace_counter_0" BEL "gs/grace_counter_1" BEL "gs/grace_counter_4"
+        BEL "gs/grace_counter_2" BEL "gs/grace_counter_3" BEL
+        "gs/grace_counter_5" BEL "gs/grace_counter_6" BEL "gs/grace_counter_7"
+        BEL "gs/grace_counter_8" BEL "gs/grace_counter_9" BEL
+        "gs/grace_counter_10" BEL "gs/grace_counter_13" BEL
+        "gs/grace_counter_11" BEL "gs/grace_counter_12" BEL
+        "gs/grace_counter_14" BEL "gs/grace_counter_15" BEL
+        "gs/grace_counter_16" BEL "gs/grace_counter_17" BEL
+        "gs/grace_counter_18" BEL "gs/grace_counter_19" BEL
+        "gs/grace_counter_20" BEL "gs/grace_counter_21" BEL
+        "gs/grace_counter_22" BEL "gs/grace_counter_23" BEL
+        "gs/grace_counter_24" BEL "gs/grace_counter_25" BEL
+        "gs/grace_counter_26" BEL "gs/grace_counter_27" BEL
+        "gs/score/digit3/o_val_0" BEL "gs/score/digit2/o_val_0" BEL
+        "gs/score/digit1/o_val_0" BEL "gs/score/digit0/o_val_0" BEL
+        "gs/score/digit3/o_val_2" BEL "gs/score/digit3/o_val_1" BEL
+        "gs/score/digit3/o_val_3" BEL "gs/score/digit2/o_val_3" BEL
+        "gs/score/digit2/o_val_1" BEL "gs/score/digit2/o_val_2" BEL
+        "gs/score/digit1/o_val_3" BEL "gs/score/digit1/o_val_2" BEL
+        "gs/score/digit1/o_val_1" BEL "gs/score/digit0/o_val_2" BEL
+        "gs/score/digit0/o_val_1" BEL "gs/score/digit0/o_val_3" BEL
+        "top/cnt_15" BEL "top/cnt_14" BEL "top/cnt_13" BEL
+        "top/display/h_count_9" BEL "top/display/h_count_8" BEL
+        "top/display/h_count_7" BEL "top/display/h_count_6" BEL
+        "top/display/h_count_5" BEL "top/display/h_count_4" BEL
+        "top/display/h_count_3" BEL "top/display/h_count_2" BEL
+        "top/display/h_count_1" BEL "top/display/h_count_0" BEL
+        "top/display/v_count_9" BEL "top/display/v_count_8" BEL
+        "top/display/v_count_7" BEL "top/display/v_count_6" BEL
+        "top/display/v_count_5" BEL "top/display/v_count_4" BEL
+        "top/display/v_count_3" BEL "top/display/v_count_2" BEL
+        "top/display/v_count_1" BEL "top/display/v_count_0" BEL
+        "top/[0].cactus/wait_timer_8" BEL "top/[0].cactus/wait_timer_7" BEL
+        "top/[0].cactus/wait_timer_6" BEL "top/[0].cactus/wait_timer_5" BEL
+        "top/[0].cactus/wait_timer_4" BEL "top/[0].cactus/wait_timer_3" BEL
+        "top/[0].cactus/wait_timer_2" BEL "top/[0].cactus/wait_timer_1" BEL
+        "top/[0].cactus/y_7" BEL "top/[0].cactus/y_6" BEL "top/[0].cactus/y_5"
+        BEL "top/[0].cactus/y_4" BEL "top/[0].cactus/y_3" BEL
+        "top/[0].cactus/y_2" BEL "top/[0].cactus/x_11" BEL
+        "top/[0].cactus/x_8" BEL "top/[0].cactus/x_6" BEL "top/[0].cactus/x_5"
+        BEL "top/[0].cactus/x_4" BEL "top/[0].cactus/x_1" BEL
+        "top/[0].cactus/x_0" BEL "top/[0].cactus/rnd_clk" BEL
+        "top/[1].cactus/wait_timer_9" BEL "top/[1].cactus/wait_timer_8" BEL
+        "top/[1].cactus/wait_timer_7" BEL "top/[1].cactus/wait_timer_6" BEL
+        "top/[1].cactus/wait_timer_5" BEL "top/[1].cactus/wait_timer_4" BEL
+        "top/[1].cactus/wait_timer_3" BEL "top/[1].cactus/wait_timer_2" BEL
+        "top/[1].cactus/wait_timer_1" BEL "top/[1].cactus/y_7" BEL
+        "top/[1].cactus/y_6" BEL "top/[1].cactus/y_5" BEL "top/[1].cactus/y_4"
+        BEL "top/[1].cactus/y_3" BEL "top/[1].cactus/y_2" BEL
+        "top/[1].cactus/x_11" BEL "top/[1].cactus/x_8" BEL
+        "top/[1].cactus/x_6" BEL "top/[1].cactus/x_5" BEL "top/[1].cactus/x_4"
+        BEL "top/[1].cactus/x_1" BEL "top/[1].cactus/x_0" BEL
+        "top/[1].cactus/rnd_clk" BEL "top/[2].cactus/wait_timer_10" BEL
+        "top/[2].cactus/wait_timer_9" BEL "top/[2].cactus/wait_timer_8" BEL
+        "top/[2].cactus/wait_timer_7" BEL "top/[2].cactus/wait_timer_6" BEL
+        "top/[2].cactus/wait_timer_5" BEL "top/[2].cactus/wait_timer_4" BEL
+        "top/[2].cactus/wait_timer_3" BEL "top/[2].cactus/wait_timer_2" BEL
+        "top/[2].cactus/wait_timer_1" BEL "top/[2].cactus/y_7" BEL
+        "top/[2].cactus/y_6" BEL "top/[2].cactus/y_5" BEL "top/[2].cactus/y_4"
+        BEL "top/[2].cactus/y_3" BEL "top/[2].cactus/y_2" BEL
+        "top/[2].cactus/x_11" BEL "top/[2].cactus/x_8" BEL
+        "top/[2].cactus/x_6" BEL "top/[2].cactus/x_5" BEL "top/[2].cactus/x_4"
+        BEL "top/[2].cactus/x_1" BEL "top/[2].cactus/x_0" BEL
+        "top/[2].cactus/rnd_clk" BEL "top/[3].cactus/wait_timer_10" BEL
+        "top/[3].cactus/wait_timer_9" BEL "top/[3].cactus/wait_timer_8" BEL
+        "top/[3].cactus/wait_timer_7" BEL "top/[3].cactus/wait_timer_6" BEL
+        "top/[3].cactus/wait_timer_5" BEL "top/[3].cactus/wait_timer_4" BEL
+        "top/[3].cactus/wait_timer_3" BEL "top/[3].cactus/wait_timer_2" BEL
+        "top/[3].cactus/wait_timer_1" BEL "top/[3].cactus/y_7" BEL
+        "top/[3].cactus/y_6" BEL "top/[3].cactus/y_5" BEL "top/[3].cactus/y_4"
+        BEL "top/[3].cactus/y_3" BEL "top/[3].cactus/y_2" BEL
+        "top/[3].cactus/x_11" BEL "top/[3].cactus/x_8" BEL
+        "top/[3].cactus/x_6" BEL "top/[3].cactus/x_5" BEL "top/[3].cactus/x_4"
+        BEL "top/[3].cactus/x_1" BEL "top/[3].cactus/x_0" BEL
+        "top/[3].cactus/rnd_clk" BEL "top/[0].bird/y_7" BEL "top/[0].bird/y_5"
+        BEL "top/[0].bird/y_4" BEL "top/[0].bird/y_3" BEL "top/[0].bird/y_2"
+        BEL "top/[0].bird/y_1" BEL "top/[0].bird/y_0" BEL
+        "top/[0].bird/wait_timer_8" BEL "top/[0].bird/wait_timer_7" BEL
+        "top/[0].bird/wait_timer_6" BEL "top/[0].bird/wait_timer_5" BEL
+        "top/[0].bird/wait_timer_4" BEL "top/[0].bird/wait_timer_3" BEL
+        "top/[0].bird/wait_timer_2" BEL "top/[0].bird/wait_timer_1" BEL
+        "top/[0].bird/height_4" BEL "top/[0].bird/height_3" BEL
+        "top/[0].bird/height_2" BEL "top/[0].bird/height_1" BEL
+        "top/[0].bird/height_0" BEL "top/[0].bird/x_11" BEL "top/[0].bird/x_8"
+        BEL "top/[0].bird/x_6" BEL "top/[0].bird/x_5" BEL "top/[0].bird/x_4"
+        BEL "top/[0].bird/rnd_clk" BEL "top/[1].bird/y_7" BEL
+        "top/[1].bird/y_5" BEL "top/[1].bird/y_4" BEL "top/[1].bird/y_3" BEL
+        "top/[1].bird/y_2" BEL "top/[1].bird/y_1" BEL "top/[1].bird/y_0" BEL
+        "top/[1].bird/wait_timer_9" BEL "top/[1].bird/wait_timer_8" BEL
+        "top/[1].bird/wait_timer_7" BEL "top/[1].bird/wait_timer_6" BEL
+        "top/[1].bird/wait_timer_5" BEL "top/[1].bird/wait_timer_4" BEL
+        "top/[1].bird/wait_timer_3" BEL "top/[1].bird/wait_timer_2" BEL
+        "top/[1].bird/wait_timer_1" BEL "top/[1].bird/height_4" BEL
+        "top/[1].bird/height_3" BEL "top/[1].bird/height_2" BEL
+        "top/[1].bird/height_1" BEL "top/[1].bird/height_0" BEL
+        "top/[1].bird/x_11" BEL "top/[1].bird/x_8" BEL "top/[1].bird/x_6" BEL
+        "top/[1].bird/x_5" BEL "top/[1].bird/x_4" BEL "top/[1].bird/rnd_clk"
+        BEL "top/[2].bird/y_7" BEL "top/[2].bird/y_5" BEL "top/[2].bird/y_4"
+        BEL "top/[2].bird/y_3" BEL "top/[2].bird/y_2" BEL "top/[2].bird/y_1"
+        BEL "top/[2].bird/y_0" BEL "top/[2].bird/wait_timer_10" BEL
+        "top/[2].bird/wait_timer_9" BEL "top/[2].bird/wait_timer_8" BEL
+        "top/[2].bird/wait_timer_7" BEL "top/[2].bird/wait_timer_6" BEL
+        "top/[2].bird/wait_timer_5" BEL "top/[2].bird/wait_timer_4" BEL
+        "top/[2].bird/wait_timer_3" BEL "top/[2].bird/wait_timer_2" BEL
+        "top/[2].bird/wait_timer_1" BEL "top/[2].bird/height_4" BEL
+        "top/[2].bird/height_3" BEL "top/[2].bird/height_2" BEL
+        "top/[2].bird/height_1" BEL "top/[2].bird/height_0" BEL
+        "top/[2].bird/x_11" BEL "top/[2].bird/x_8" BEL "top/[2].bird/x_6" BEL
+        "top/[2].bird/x_5" BEL "top/[2].bird/x_4" BEL "top/[2].bird/rnd_clk"
+        BEL "top/[3].bird/y_7" BEL "top/[3].bird/y_5" BEL "top/[3].bird/y_4"
+        BEL "top/[3].bird/y_3" BEL "top/[3].bird/y_2" BEL "top/[3].bird/y_1"
+        BEL "top/[3].bird/y_0" BEL "top/[3].bird/wait_timer_10" BEL
+        "top/[3].bird/wait_timer_9" BEL "top/[3].bird/wait_timer_8" BEL
+        "top/[3].bird/wait_timer_7" BEL "top/[3].bird/wait_timer_6" BEL
+        "top/[3].bird/wait_timer_5" BEL "top/[3].bird/wait_timer_4" BEL
+        "top/[3].bird/wait_timer_3" BEL "top/[3].bird/wait_timer_2" BEL
+        "top/[3].bird/wait_timer_1" BEL "top/[3].bird/height_4" BEL
+        "top/[3].bird/height_3" BEL "top/[3].bird/height_2" BEL
+        "top/[3].bird/height_1" BEL "top/[3].bird/height_0" BEL
+        "top/[3].bird/x_11" BEL "top/[3].bird/x_8" BEL "top/[3].bird/x_6" BEL
+        "top/[3].bird/x_5" BEL "top/[3].bird/x_4" BEL "top/[3].bird/rnd_clk"
+        BEL "top/dino/y_vel_2" BEL "top/dino/y_vel_1" BEL "top/dino/y_vel_3"
+        BEL "top/dino/y_11" BEL "top/dino/y_10" BEL "top/dino/y_9" BEL
+        "top/dino/y_8" BEL "top/dino/y_7" BEL "top/dino/y_6" BEL
+        "top/dino/y_5" BEL "top/dino/y_4" BEL "top/dino/y_3" BEL
+        "top/dino/y_2" BEL "top/dino/y_1" BEL "top/dino/y_0" BEL
+        "top/dino/current_height_1" BEL "clkdiv/score_reg_22" BEL
+        "clkdiv/dp_reg_19" BEL "clkdiv/dp_reg_18" BEL "clkdiv/dp_reg_17" BEL
+        "clkdiv/dp_reg_16" BEL "clkdiv/dp_reg_15" BEL "clkdiv/dp_reg_14" BEL
+        "clkdiv/dp_reg_13" BEL "clkdiv/dp_reg_12" BEL "clkdiv/dp_reg_11" BEL
+        "clkdiv/dp_reg_10" BEL "clkdiv/dp_reg_9" BEL "clkdiv/dp_reg_8" BEL
+        "clkdiv/dp_reg_7" BEL "clkdiv/dp_reg_6" BEL "clkdiv/dp_reg_5" BEL
+        "clkdiv/dp_reg_4" BEL "clkdiv/dp_reg_3" BEL "clkdiv/dp_reg_2" BEL
+        "clkdiv/dp_reg_1" BEL "clkdiv/dp_reg_0" BEL "clkdiv/score_reg_20" BEL
+        "clkdiv/score_reg_19" BEL "clkdiv/score_reg_21" BEL
+        "clkdiv/score_reg_17" BEL "clkdiv/score_reg_16" BEL
+        "clkdiv/score_reg_18" BEL "clkdiv/score_reg_15" BEL
+        "clkdiv/score_reg_14" BEL "clkdiv/score_reg_13" BEL
+        "clkdiv/score_reg_12" BEL "clkdiv/score_reg_10" BEL
+        "clkdiv/score_reg_9" BEL "clkdiv/score_reg_11" BEL
+        "clkdiv/score_reg_7" BEL "clkdiv/score_reg_6" BEL "clkdiv/score_reg_8"
+        BEL "clkdiv/score_reg_4" BEL "clkdiv/score_reg_3" BEL
+        "clkdiv/score_reg_5" BEL "clkdiv/score_reg_2" BEL "clkdiv/score_reg_1"
+        BEL "clkdiv/score_reg_0" BEL "gs/score/digit2/carry_last" BEL
+        "gs/score/digit1/carry_last" BEL "gs/score/digit0/carry_last" BEL
+        "top/[0].cactus/x_9" BEL "top/[0].cactus/x_7" BEL "top/[0].cactus/x_3"
+        BEL "top/[0].cactus/x_2" BEL "top/[1].cactus/x_9" BEL
+        "top/[1].cactus/x_7" BEL "top/[1].cactus/x_3" BEL "top/[1].cactus/x_2"
+        BEL "top/[2].cactus/x_9" BEL "top/[2].cactus/x_7" BEL
+        "top/[2].cactus/x_3" BEL "top/[2].cactus/x_2" BEL "top/[3].cactus/x_9"
+        BEL "top/[3].cactus/x_7" BEL "top/[3].cactus/x_3" BEL
+        "top/[3].cactus/x_2" BEL "top/[0].bird/x_9" BEL "top/[0].bird/x_7" BEL
+        "top/[0].bird/x_3" BEL "top/[0].bird/x_2" BEL "top/[0].bird/x_1" BEL
+        "top/[0].bird/x_0" BEL "top/[1].bird/x_9" BEL "top/[1].bird/x_7" BEL
+        "top/[1].bird/x_3" BEL "top/[1].bird/x_2" BEL "top/[1].bird/x_1" BEL
+        "top/[1].bird/x_0" BEL "top/[2].bird/x_9" BEL "top/[2].bird/x_7" BEL
+        "top/[2].bird/x_3" BEL "top/[2].bird/x_2" BEL "top/[2].bird/x_1" BEL
+        "top/[2].bird/x_0" BEL "top/[3].bird/x_9" BEL "top/[3].bird/x_7" BEL
+        "top/[3].bird/x_3" BEL "top/[3].bird/x_2" BEL "top/[3].bird/x_1" BEL
+        "top/[3].bird/x_0" BEL "top/floor/x_6" BEL "top/dino/y_vel_11" BEL
+        "top/dino/y_vel_10" BEL "top/dino/y_vel_8" BEL "top/dino/y_vel_7" BEL
+        "top/dino/y_vel_9" BEL "top/dino/y_vel_5" BEL "top/dino/y_vel_4" BEL
+        "top/dino/y_vel_6" BEL "top/dino/y_vel_0" BEL "top/dino/is_jumping"
+        BEL "clkdiv/score_clk" BEL "clkdiv/dp_clk" BEL
+        "top/display/v_count_8_1" BEL "top/display/v_count_9_1" BEL
+        "top/game_clock_BUFG" BEL "i_clk_IBUF_BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+
